@@ -451,7 +451,7 @@ export class Scanner<T extends number = Numeric> implements Scanner<T> {
     const savedIndex = this.index;
     let result = '';
 
-    if (this.matchAny(['e', 'E', 'd', 'D'])) {
+    if (this.matchAny(['e', 'E'])) {
       const exponent = this.matchSignedInteger();
       if (exponent) {
         result = 'e' + exponent;

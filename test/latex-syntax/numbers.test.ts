@@ -41,7 +41,7 @@ describe('NUMBERS', () => {
   });
 
   test('Large numbers', () => {
-    expect(expression('421.35d+1000')).toMatchInlineSnapshot(
+    expect(expression('421.35e+1000')).toMatchInlineSnapshot(
       `{num: '421.35e1000'}`
     );
     expect(expression('9007199234534554740991')).toMatchInlineSnapshot(
