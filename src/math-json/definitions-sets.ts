@@ -102,7 +102,7 @@ export const DEFINITIONS_SETS: LatexDictionary<any> = [
   {
     name: 'Complement',
     trigger: ['^', '\\complement'],
-    kind: 'infix',
+    kind: 'postfix',
     // precedence: 240,
     // @todo: serialize for the multiple argument case
   },
